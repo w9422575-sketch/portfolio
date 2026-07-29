@@ -43,6 +43,7 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.15; }
     linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
   background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, black 40%, transparent 100%);
   mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, black 40%, transparent 100%);
 }
 
@@ -72,6 +73,8 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.15; }
 .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
 .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
 .nav-links a:hover { color: var(--text); }
+.nav-links a.btn, .nav-links a.btn:hover { color: #fff; }
+.nav-links a.btn--ghost, .nav-links a.btn--ghost:hover { color: var(--text); }
 
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
 .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--text); transition: 0.3s; }
@@ -80,11 +83,11 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.15; }
 .btn {
   display: inline-block; padding: 0.85rem 1.9rem; border-radius: 999px;
   background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-  color: #fff !important; text-decoration: none; font-weight: 600; font-size: 0.95rem;
+  color: #fff; text-decoration: none; font-weight: 600; font-size: 0.95rem;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(91, 140, 255, 0.35); }
-.btn--ghost { background: transparent; border: 1px solid var(--border); color: var(--text) !important; }
+.btn--ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
 .btn--ghost:hover { box-shadow: none; border-color: var(--accent-1); }
 .btn--small { padding: 0.55rem 1.3rem; }
 
