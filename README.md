@@ -2,6 +2,14 @@
 
 Portfolio professionnel de Synok : sites web, intranets et social média.
 
+## Aperçu
+
+![Aperçu du portfolio](screenshots/apercu-portfolio.png)
+
+| Page complète (1440 px) | Mobile (375 px) |
+|---|---|
+| [`screenshots/page-complete.png`](screenshots/page-complete.png) | [`screenshots/mobile-375.png`](screenshots/mobile-375.png) |
+
 ## Structure
 
 - `index.html` — page unique du portfolio (hero, services, vision, méthode, contact)
