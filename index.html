@@ -11,17 +11,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
-  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
 
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="logo">SYN<span>OK</span></a>
-      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#" class="logo" aria-label="Synok — retour en haut">SYN<span>OK</span></a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#vision">Vision</a></li>
         <li><a href="#process">Méthode</a></li>
@@ -30,17 +31,23 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <!-- Hero -->
     <section class="hero container">
-      <p class="hero-tag reveal">Studio digital indépendant</p>
+      <p class="hero-tag reveal">
+        <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"/></svg>
+        Studio digital indépendant
+      </p>
       <h1 class="reveal">Construisons dès aujourd'hui<br /><span class="gradient-text">le numérique de demain.</span></h1>
       <p class="hero-sub reveal">
         Synok conçoit des sites web, des intranets et des stratégies social média
         qui donnent à votre entreprise une longueur d'avance.
       </p>
       <div class="hero-actions reveal">
-        <a href="#contact" class="btn">Démarrer un projet</a>
+        <a href="#contact" class="btn">
+          Démarrer un projet
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
         <a href="#services" class="btn btn--ghost">Découvrir les services</a>
       </div>
       <div class="hero-stats reveal">
@@ -56,7 +63,9 @@
       <h2 class="reveal">Trois expertises, <span class="gradient-text">une même exigence.</span></h2>
       <div class="cards">
         <article class="card reveal">
-          <div class="card-icon">◆</div>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+          </div>
           <h3>Sites web &amp; applications</h3>
           <p>
             Sites vitrines, e-commerce et applications web performants, accessibles
@@ -69,7 +78,9 @@
           </ul>
         </article>
         <article class="card reveal">
-          <div class="card-icon">◇</div>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
           <h3>Intranets &amp; outils internes</h3>
           <p>
             Des plateformes internes qui fluidifient la collaboration : portails
@@ -82,7 +93,9 @@
           </ul>
         </article>
         <article class="card reveal">
-          <div class="card-icon">◈</div>
+          <div class="card-icon">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg>
+          </div>
           <h3>Social média</h3>
           <p>
             Une présence sociale cohérente et impactante : stratégie éditoriale,
@@ -109,9 +122,21 @@
           investir dans un numérique durable, évolutif et tourné vers l'avenir.
         </p>
         <div class="vision-pillars">
-          <div class="pillar reveal"><strong>Anticiper</strong><p>Des choix technologiques pérennes qui accompagnent votre croissance.</p></div>
-          <div class="pillar reveal"><strong>Simplifier</strong><p>Des expériences claires et intuitives, pour vos clients comme vos équipes.</p></div>
-          <div class="pillar reveal"><strong>Connecter</strong><p>Du site public à l'intranet, en passant par les réseaux : un écosystème unifié.</p></div>
+          <div class="pillar reveal">
+            <svg class="icon pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            <strong>Anticiper</strong>
+            <p>Des choix technologiques pérennes qui accompagnent votre croissance.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg class="icon pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <strong>Simplifier</strong>
+            <p>Des expériences claires et intuitives, pour vos clients comme vos équipes.</p>
+          </div>
+          <div class="pillar reveal">
+            <svg class="icon pillar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 17H7A5 5 0 0 1 7 7h2"/><path d="M15 7h2a5 5 0 1 1 0 10h-2"/><line x1="8" x2="16" y1="12" y2="12"/></svg>
+            <strong>Connecter</strong>
+            <p>Du site public à l'intranet, en passant par les réseaux : un écosystème unifié.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -133,7 +158,10 @@
       <div class="cta reveal">
         <h2>Prêt à prendre <span class="gradient-text">une longueur d'avance&nbsp;?</span></h2>
         <p>Parlons de votre projet — site web, intranet ou stratégie social média.</p>
-        <a href="mailto:contact@synok.fr" class="btn">contact@synok.fr</a>
+        <a href="mailto:contact@synok.fr" class="btn">
+          <svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          contact@synok.fr
+        </a>
       </div>
     </section>
   </main>
