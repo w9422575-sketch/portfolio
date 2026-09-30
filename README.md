@@ -1,3 +1,5 @@
 # Portfolio Synok
 
-Dépôt du portfolio professionnel de Synok.
+Portfolio plus actif 😪😪😪
+
+(ദ്ദി˙ᗜ˙)
